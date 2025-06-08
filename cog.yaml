@@ -1,0 +1,11 @@
+build:
+  python_version: "3.10"
+  python_packages:
+    - sentence-transformers
+    - torch
+    - fastapi
+    - uvicorn
+
+predict: "predict.py:Predictor"
+gpu: true
+
