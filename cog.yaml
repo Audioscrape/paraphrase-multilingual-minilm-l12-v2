@@ -1,11 +1,9 @@
+image: r8.im/audioscrape/paraphrase-multilingual-minilm-l12-v2
+
 build:
   gpu: true
   python_version: "3.10"
-  python_packages:
-    - sentence-transformers
-    - torch
-    - fastapi
-    - uvicorn
+  python_requirements: requirements.txt
 
 predict: "predict.py:Predictor"
 
